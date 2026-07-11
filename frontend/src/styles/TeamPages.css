@@ -1,0 +1,185 @@
+/* Team Pages — Dark Theme */
+
+.team-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: calc(100vh - 60px);
+}
+
+.team-container h1 {
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.team-container > p {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+/* Action cards */
+.team-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.team-action-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.team-action-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.team-action-card input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.team-action-card input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.team-action-card button {
+  width: 100%;
+}
+
+/* Team detail */
+.team-detail {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.team-detail h2 {
+  color: var(--text-primary);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.invite-code {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.invite-code code {
+  font-family: monospace;
+  font-size: 16px;
+  color: var(--accent);
+  flex: 1;
+  letter-spacing: 2px;
+}
+
+.invite-code button {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* Members list */
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.member-item .member-name {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.member-item .member-status {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.member-status.accepted { background: rgba(46,213,115,0.2); color: var(--success); }
+.member-status.pending { background: rgba(255,165,2,0.2); color: var(--warning); }
+.member-status.declined { background: rgba(255,71,87,0.2); color: var(--danger); }
+
+/* Team card in list */
+.team-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 12px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.team-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px var(--accent-glow);
+}
+
+.team-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.team-card p {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.team-btn {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  margin-right: 8px;
+}
+
+.team-btn-primary {
+  background: var(--accent-gradient);
+  color: white;
+}
+
+.team-btn-danger {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.team-btn-danger:hover {
+  background: rgba(255,71,87,0.15);
+}
+
+@media (max-width: 600px) {
+  .team-actions { grid-template-columns: 1fr; }
+}
