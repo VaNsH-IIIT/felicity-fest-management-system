@@ -1,0 +1,3 @@
+Frontend URL: https://fest-event-management-system.vercel.app
+Backend API URL: https://fest-event-management-system.onrender.com/api
+Database: MongoDB Atlas (connection via MONGO_URI environment variable)
