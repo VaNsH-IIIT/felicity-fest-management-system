@@ -2,8 +2,12 @@
 
 A platform for running college fest events end-to-end — browsing and registering for events, buying merchandise, coordinating teams, and managing everything from the organizer/admin side. Think of it as the backend brain + frontend face for something like Felicity.
 
-**Live demo:** https://fest-event-management-system.vercel.app
-**API:** https://fest-event-management-system.onrender.com/api
+## Live Demo
+
+Frontend: https://felicity-fest-management-system.vercel.app
+
+Backend API:
+https://felicity-backend-ifua.onrender.com
 
 ---
 
